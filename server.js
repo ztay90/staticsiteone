@@ -7,7 +7,7 @@ const app = express()
 app.use("/", serveStatic ( path.join (__dirname, '/public') ) )
 // Serve index by default
 app.get('/', function (req, res){
-  res.sendFile(__dirname + ''index.html')
+  res.sendFile(__dirname + ''/public/index.html')
 })
 // Create default port to serve the app
 const port = process.env.PORT | | 5000
